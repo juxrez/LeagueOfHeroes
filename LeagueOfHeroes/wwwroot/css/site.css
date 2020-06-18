@@ -69,3 +69,25 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+.in-the-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -19px;
+    margin-left: -75px;
+    width: 150px;
+    height: 38px;
+}
+.header-section {
+    background-color: #086972;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+h2 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+html + #page-container {
+    background-color: #e7dfd5;
+}
+
