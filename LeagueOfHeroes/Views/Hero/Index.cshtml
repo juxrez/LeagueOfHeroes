@@ -21,15 +21,26 @@
                 <div class="tab-pane fade" id="list-@item.Name" role="tabpanel" aria-labelledby="list-@item.Name-list">
                     <div class="row">
                         <div id="heroe-info" class="col-6">
-                            <img src="@item.Picture" title="@item.Name" alt="Heroe @item.Name" />
-                            <p>Name: @item.Name</p>
+                            <img class="heroe-img" src="@item.Picture" title="@item.Name" alt="Heroe @item.Name" />
+                            <p class="text-bold">Name: </p>
+                            <p>@item.Name</p>
                             <hr />
-                            <p>Age: @item.Age</p>
+                            <p class="text-bold">Age: </p>
+                            <p> @item.Age</p>
                             <hr />
-                            <p>City: @item.City</p>
+                            <p class="text-bold">City: </p>
+                            <p>@item.City</p>
                         </div>
                         <div id="heroe-ratings" class="col-6">
-                            <p>Ratings: <span style="color:yellow">★★★★★</span></p>
+                            <h3>Ratings:</h3>
+                            <p>Score <span title="5.0 stars" class="score-stars">★★★★★</span></p>
+                            <div class="score-history">
+                                <h4>History:</h4>
+                                <p>Pedro Jose: <span title="5.0 stars" class="score-stars">★★★★★</span></p>
+                                <p>Fernando Leyva: <span title="5.0 stars" class="score-stars">★★★★★</span></p>
+                                <p>Astro Juarez: <span title="5.0 stars" class="score-stars">★★★★★</span></p>
+                            </div>
+                            <p></p>
                         </div>
                     </div>
                 </div>

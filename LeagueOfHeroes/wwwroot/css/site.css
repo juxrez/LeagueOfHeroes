@@ -93,4 +93,36 @@ h2 {
 .heroes-list {
     margin-top: 150px;
 }
+img {
+    border-radius: 10%;
+    margin-bottom: 40px;
+}
+#heroe-content {
+    text-align: center;
+}
+.text-bold {
+    font-weight: bold;
+}
+.score-stars {
+    color: orange;
+    font-size: 25px;
+}
+.score-history {
+    margin-top: 60px;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #086972;
+    border-color: #086972;
+}
+.list-group-item-action:active {
+    color: #212529;
+    background-color: #086972;
+}
+.list-group-item-primary.list-group-item-action.active {
+    color: #fff;
+    background-color: #086972;
+    border-color: #004085;
+}
 
