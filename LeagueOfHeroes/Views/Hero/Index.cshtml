@@ -1,0 +1,41 @@
+﻿@model List<HeroViewModel>
+@{
+
+}
+
+<div class="row heroes-list">
+    <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+            @foreach (var item in Model)
+            {
+                <a class="list-group-item list-group-item-action" id="list-@item.Name-list" data-toggle="list" href="#list-@item.Name" role="tab" aria-controls="@item.Name">@item.Name</a>
+            }
+        </div>
+    </div>
+    <div class="col-8">
+        <div id="heroe-content">
+            <div class="tab-content" id="nav-tabContent">
+                @foreach (var item in Model)
+                {
+                    
+                <div class="tab-pane fade" id="list-@item.Name" role="tabpanel" aria-labelledby="list-@item.Name-list">
+                    <div class="row">
+                        <div id="heroe-info" class="col-6">
+                            <img src="@item.Picture" title="@item.Name" alt="Heroe @item.Name" />
+                            <p>Name: @item.Name</p>
+                            <hr />
+                            <p>Age: @item.Age</p>
+                            <hr />
+                            <p>City: @item.City</p>
+                        </div>
+                        <div id="heroe-ratings" class="col-6">
+                            <p>Ratings: <span style="color:yellow">★★★★★</span></p>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+        
+    </div>
+</div>

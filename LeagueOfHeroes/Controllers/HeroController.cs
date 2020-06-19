@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LeagueOfHeroes.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,10 +10,16 @@ namespace LeagueOfHeroes.Controllers
 {
     public class HeroController : Controller
     {
-        // GET: HomeController1
-        public ActionResult Index()
+        private readonly IHeroService _heroService;
+        public HeroController(IHeroService heroService)
         {
-            return View();
+            _heroService = heroService;
+        }
+        // GET: HomeController1
+        public async Task<ActionResult> Index()
+        {
+            var heroes = await _heroService.GetAllHeroesAsync();
+            return View(heroes);
         }
 
         // GET: HomeController1/Details/5

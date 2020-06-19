@@ -2,6 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using LeagueOfHeroes.Data.Repositories;
+using LeagueOfHeroes.Data.Repositories.Interface;
+using LeagueOfHeroes.Services;
+using LeagueOfHeroes.Services.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +29,13 @@ namespace LeagueOfHeroes
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddAutoMapper(typeof(Startup));
+
+            services.AddScoped<IHeroService, HeroService>();
+            services.AddScoped<IHeroRepository, HeroRepository>();
+
+            services.AddScoped<IRatingRepository, RatingRepository>();
+            services.AddScoped<IRatingService, RatingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
