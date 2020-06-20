@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace LeagueOfHeroes.Migrations
+namespace LeagueOfHeroes.Data.Migrations
 {
     [DbContext(typeof(LeagueOfHeroesContext))]
-    [Migration("20200620221035_Seed_Data")]
+    [Migration("20200620231227_Seed_Data")]
     partial class Seed_Data
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

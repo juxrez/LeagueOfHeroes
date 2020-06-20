@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace LeagueOfHeroes.Migrations
+namespace LeagueOfHeroes.Data.Migrations
 {
     [DbContext(typeof(LeagueOfHeroesContext))]
-    [Migration("20200620220121_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20200620231155_Initial_Migration")]
+    partial class Initial_Migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace LeagueOfHeroes.Migrations
+namespace LeagueOfHeroes.Data.Migrations
 {
     [DbContext(typeof(LeagueOfHeroesContext))]
     partial class LeagueOfHeroesContextModelSnapshot : ModelSnapshot

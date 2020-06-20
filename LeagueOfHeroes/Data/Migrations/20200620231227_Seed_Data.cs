@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace LeagueOfHeroes.Migrations
+namespace LeagueOfHeroes.Data.Migrations
 {
     public partial class Seed_Data : Migration
     {
