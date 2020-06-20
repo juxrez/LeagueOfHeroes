@@ -11,48 +11,27 @@ namespace LeagueOfHeroes.Data.Repositories.Base
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
-        //TODO: Import Context
-        public BaseRepository()
-        {
+        private readonly LeagueOfHeroesContext _context;
 
+        public BaseRepository(LeagueOfHeroesContext context)
+        {
+            _context = context;
         }
 
         public Task<List<TEntity>> GetAsync(Func<TEntity, bool> predicate)
         {
-            var result = new List<TEntity>();
-            using (StreamReader file = File.OpenText(@"c:\Data.json"))
-            using (JsonTextReader reader = new JsonTextReader(file))
-            {
-                JObject o2 = (JObject)JToken.ReadFrom(reader);
-                result = JsonConvert.DeserializeObject<List<TEntity>>(o2.ToString());
-            }
-            return Task.FromResult(result.Where(predicate).ToList());
+
+            throw new NotImplementedException();
         }
 
         public Task<List<TEntity>> GetAllAsync()
         {
-            var result = new List<TEntity>();
-            JObject o1 = JObject.Parse(File.ReadAllText(@"c:\data.json"));
-            //using (StreamReader file = File.OpenText(@"c:\Data.json"))
-            //using (JsonTextReader reader = new JsonTextReader(file))
-            //{
-            //    JObject o2 = (JObject)JToken.ReadFrom(reader);
-            //    result = JsonConvert.DeserializeObject<List<TEntity>>(o2.ToString());
-            //}
-            result = JsonConvert.DeserializeObject<List<TEntity>>(o1.ToString());
-            return Task.FromResult(result);
+            throw new NotImplementedException();
         }
 
         public Task<TEntity> GetSingleAsync(Func<TEntity, bool> predicate)
         {
-            var result = new List<TEntity>();
-            using (StreamReader file = File.OpenText(@"c:\Data.json"))
-            using (JsonTextReader reader = new JsonTextReader(file))
-            {
-                JObject o2 = (JObject)JToken.ReadFrom(reader);
-                result = JsonConvert.DeserializeObject<List<TEntity>>(o2.ToString());
-            }
-            return Task.FromResult(result.Where(predicate).FirstOrDefault());
+            throw new NotImplementedException();
         }
     }
 }

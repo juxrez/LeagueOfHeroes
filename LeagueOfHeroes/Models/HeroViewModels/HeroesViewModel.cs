@@ -1,12 +1,12 @@
-﻿using System;
+﻿using LeagueOfHeroes.Models.RatingViewModels;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LeagueOfHeroes.Models.HeroViewModels
 {
     public class HeroesViewModel
     {
         public List<HeroViewModel> Heroes { get; set; }
+        public bool HasError { get; set; }
+        public string ErrorMessage { get; set; }
     }
 }

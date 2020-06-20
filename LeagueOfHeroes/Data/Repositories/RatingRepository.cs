@@ -10,5 +10,8 @@ namespace LeagueOfHeroes.Data.Repositories
 {
     public class RatingRepository : BaseRepository<Rating>, IRatingRepository
     {
+        public RatingRepository(LeagueOfHeroesContext context) : base(context)
+        {
+        }
     }
 }

@@ -10,5 +10,9 @@ namespace LeagueOfHeroes.Data.Repositories
 {
     public class HeroRepository : BaseRepository<Hero>, IHeroRepository
     {
+        public HeroRepository(LeagueOfHeroesContext context) : base(context)
+        {
+        }
+
     }
 }

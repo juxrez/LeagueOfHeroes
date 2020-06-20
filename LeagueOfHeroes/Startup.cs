@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using LeagueOfHeroes.Data;
 using LeagueOfHeroes.Data.Repositories;
 using LeagueOfHeroes.Data.Repositories.Interface;
 using LeagueOfHeroes.Services;
@@ -10,6 +11,7 @@ using LeagueOfHeroes.Services.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -30,6 +32,12 @@ namespace LeagueOfHeroes
         {
             services.AddControllersWithViews();
             services.AddAutoMapper(typeof(Startup));
+            
+            services.AddDbContext<LeagueOfHeroesContext>(options =>
+            {
+                options.UseMySQL(
+                    Configuration.GetConnectionString("DefaultConnection"));
+            });
 
             services.AddScoped<IHeroService, HeroService>();
             services.AddScoped<IHeroRepository, HeroRepository>();

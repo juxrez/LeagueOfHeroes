@@ -8,8 +8,10 @@ namespace LeagueOfHeroes.Models.RatingViewModels
 {
     public class RatingViewModel
     {
-        public double Value { get; set; }
-        public int FullStars { get; set; }
-        public bool HasMediumStar { get; set; }
+        public int Id { get; set; }
+        public int HeroId { get; set; }
+        public int Stars { get; set; }
+        public string RatingBy { get; set; }
+        public DateTime RatingDate { get; set; }
     }
 }

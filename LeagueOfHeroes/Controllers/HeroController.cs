@@ -31,5 +31,20 @@ namespace LeagueOfHeroes.Controllers
             }
             
         }
+
+        [Route("seed")]
+        public async Task<ActionResult> SeedData()
+        {
+            try
+            {
+
+                return View("Index");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

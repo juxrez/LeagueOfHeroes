@@ -5,12 +5,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\Migrations\20200620022242_Initial-Migration.cs" />
+    <Compile Remove="Data\Migrations\20200620022242_Initial-Migration.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200620032927_AddData.cs" />
+    <Compile Remove="Data\Migrations\20200620032927_AddData.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200620215224_seedData.cs" />
+    <Compile Remove="Data\Migrations\20200620215224_seedData.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200620215621_seedData.cs" />
+    <Compile Remove="Data\Migrations\20200620215621_seedData.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\Migrations\" />
     <Folder Include="Views\Rating\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
