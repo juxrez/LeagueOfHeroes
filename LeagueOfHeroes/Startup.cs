@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using LeagueOfHeroes.Data;
 using LeagueOfHeroes.Data.Repositories;
@@ -10,7 +6,6 @@ using LeagueOfHeroes.Services;
 using LeagueOfHeroes.Services.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,7 +31,7 @@ namespace LeagueOfHeroes
             services.AddDbContext<LeagueOfHeroesContext>(options =>
             {
                 options.UseMySQL(
-                    Configuration.GetConnectionString("DefaultConnection"));
+                    Configuration.GetConnectionString("AzureConnection"));
             });
 
             services.AddScoped<IHeroService, HeroService>();
