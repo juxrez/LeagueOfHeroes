@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using LeagueOfHeroes.Models.HeroViewModels;
 using LeagueOfHeroes.Services.Interface;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LeagueOfHeroes.Controllers
@@ -19,32 +17,18 @@ namespace LeagueOfHeroes.Controllers
         [Route("heroes")]
         public async Task<ActionResult> Index()
         {
+            var heroesVm = new HeroesViewModel();
             try
             {
-                var heroes = await _heroService.GetAllHeroesAsync();
-                return View(heroes);
+                heroesVm = await _heroService.GetAllHeroesAsync();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                heroesVm.HasError = true;
+                heroesVm.ErrorMessage = ex.InnerException?.Message ?? ex.Message;
             }
-            
-        }
 
-        [Route("seed")]
-        public async Task<ActionResult> SeedData()
-        {
-            try
-            {
-
-                return View("Index");
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
+            return View(heroesVm);
         }
     }
 }

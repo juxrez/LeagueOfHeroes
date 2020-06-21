@@ -6,7 +6,7 @@ namespace LeagueOfHeroes.Services.Interface
 {
     public interface IHeroService
     {
-        Task<List<HeroViewModel>> GetAllHeroesAsync();
+        Task<HeroesViewModel> GetAllHeroesAsync();
         Task<HeroViewModel> GetHeroByIdAsync();
     }
 }

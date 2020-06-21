@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeagueOfHeroes.Data.Migrations
 {
     [DbContext(typeof(LeagueOfHeroesContext))]
-    [Migration("20200620231227_Seed_Data")]
+    [Migration("20200621004919_Seed_Data")]
     partial class Seed_Data
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -153,7 +153,7 @@ namespace LeagueOfHeroes.Data.Migrations
                         {
                             Id = 1,
                             HeroId = 1,
-                            RatingBy = "Alvaro",
+                            RatingBy = "Alvaro L.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 4
                         },
@@ -161,7 +161,7 @@ namespace LeagueOfHeroes.Data.Migrations
                         {
                             Id = 2,
                             HeroId = 1,
-                            RatingBy = "Pedro",
+                            RatingBy = "Pedro G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 4
                         },
@@ -169,39 +169,39 @@ namespace LeagueOfHeroes.Data.Migrations
                         {
                             Id = 3,
                             HeroId = 1,
-                            RatingBy = "Ramon",
+                            RatingBy = "Ramon A.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 5
                         },
                         new
                         {
                             Id = 4,
-                            HeroId = 2,
-                            RatingBy = "Alex",
+                            HeroId = 1,
+                            RatingBy = "Tania G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 5
+                            Stars = 2
                         },
                         new
                         {
                             Id = 5,
                             HeroId = 2,
-                            RatingBy = "Ramon",
-                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 3
-                        },
-                        new
-                        {
-                            Id = 6,
-                            HeroId = 2,
-                            RatingBy = "Pedro",
+                            RatingBy = "Alex J.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 5
                         },
                         new
                         {
+                            Id = 6,
+                            HeroId = 2,
+                            RatingBy = "Ramon A.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 3
+                        },
+                        new
+                        {
                             Id = 7,
-                            HeroId = 3,
-                            RatingBy = "Tania",
+                            HeroId = 2,
+                            RatingBy = "Pedro G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 5
                         },
@@ -209,7 +209,7 @@ namespace LeagueOfHeroes.Data.Migrations
                         {
                             Id = 8,
                             HeroId = 3,
-                            RatingBy = "Maria",
+                            RatingBy = "Tania G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 5
                         },
@@ -217,175 +217,231 @@ namespace LeagueOfHeroes.Data.Migrations
                         {
                             Id = 9,
                             HeroId = 3,
-                            RatingBy = "Pedro",
+                            RatingBy = "Maria L.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 5
+                        },
+                        new
+                        {
+                            Id = 10,
+                            HeroId = 3,
+                            RatingBy = "Pedro G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 4
                         },
                         new
                         {
-                            Id = 10,
-                            HeroId = 4,
-                            RatingBy = "Alex",
-                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 2
-                        },
-                        new
-                        {
                             Id = 11,
-                            HeroId = 4,
-                            RatingBy = "Ramon",
+                            HeroId = 3,
+                            RatingBy = "Alberto P.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 3
+                            Stars = 5
                         },
                         new
                         {
                             Id = 12,
                             HeroId = 4,
-                            RatingBy = "Pedro",
+                            RatingBy = "Alex J.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 2
+                        },
+                        new
+                        {
+                            Id = 13,
+                            HeroId = 4,
+                            RatingBy = "Ramon A.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 3
                         },
                         new
                         {
-                            Id = 13,
-                            HeroId = 5,
-                            RatingBy = "Alex",
-                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 4
-                        },
-                        new
-                        {
                             Id = 14,
-                            HeroId = 5,
-                            RatingBy = "Ramon",
+                            HeroId = 4,
+                            RatingBy = "Pedro G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 4
+                            Stars = 3
                         },
                         new
                         {
                             Id = 15,
                             HeroId = 5,
-                            RatingBy = "Pedro",
+                            RatingBy = "Alex J.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 4
                         },
                         new
                         {
                             Id = 16,
-                            HeroId = 6,
-                            RatingBy = "Alex",
+                            HeroId = 5,
+                            RatingBy = "Ramon A.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 5
+                            Stars = 4
                         },
                         new
                         {
                             Id = 17,
-                            HeroId = 6,
-                            RatingBy = "Ramon",
+                            HeroId = 5,
+                            RatingBy = "Pedro G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 4
                         },
                         new
                         {
                             Id = 18,
-                            HeroId = 6,
-                            RatingBy = "Pedro",
+                            HeroId = 5,
+                            RatingBy = "Rodgrigo A.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 5
+                            Stars = 2
                         },
                         new
                         {
                             Id = 19,
-                            HeroId = 7,
-                            RatingBy = "Alex",
+                            HeroId = 6,
+                            RatingBy = "Alex J.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 5
                         },
                         new
                         {
                             Id = 20,
-                            HeroId = 7,
-                            RatingBy = "Ramon",
+                            HeroId = 6,
+                            RatingBy = "Ramon A.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 5
+                            Stars = 4
                         },
                         new
                         {
                             Id = 21,
-                            HeroId = 7,
-                            RatingBy = "Pedro",
+                            HeroId = 6,
+                            RatingBy = "Pedro G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 5
                         },
                         new
                         {
                             Id = 22,
-                            HeroId = 8,
-                            RatingBy = "Alex",
+                            HeroId = 6,
+                            RatingBy = "Tania G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 3
                         },
                         new
                         {
                             Id = 23,
-                            HeroId = 8,
-                            RatingBy = "Ramon",
+                            HeroId = 7,
+                            RatingBy = "Alex J.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 4
+                            Stars = 5
                         },
                         new
                         {
                             Id = 24,
-                            HeroId = 8,
-                            RatingBy = "Pedro",
+                            HeroId = 7,
+                            RatingBy = "Ramon A.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 3
+                            Stars = 5
                         },
                         new
                         {
                             Id = 25,
-                            HeroId = 9,
-                            RatingBy = "Alex",
+                            HeroId = 7,
+                            RatingBy = "Pedro G.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 5
+                        },
+                        new
+                        {
+                            Id = 26,
+                            HeroId = 8,
+                            RatingBy = "Alex J.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 3
                         },
                         new
                         {
-                            Id = 26,
-                            HeroId = 9,
-                            RatingBy = "Ramon",
-                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 4
-                        },
-                        new
-                        {
                             Id = 27,
-                            HeroId = 9,
-                            RatingBy = "Pedro",
+                            HeroId = 8,
+                            RatingBy = "Ramon A.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 4
                         },
                         new
                         {
                             Id = 28,
-                            HeroId = 10,
-                            RatingBy = "Alex",
+                            HeroId = 8,
+                            RatingBy = "Pedro G.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Stars = 5
+                            Stars = 3
                         },
                         new
                         {
                             Id = 29,
-                            HeroId = 10,
-                            RatingBy = "Ramon",
+                            HeroId = 8,
+                            RatingBy = "Joaquin J.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 5
                         },
                         new
                         {
                             Id = 30,
+                            HeroId = 9,
+                            RatingBy = "Alex J.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 3
+                        },
+                        new
+                        {
+                            Id = 31,
+                            HeroId = 9,
+                            RatingBy = "Ramon A.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 4
+                        },
+                        new
+                        {
+                            Id = 32,
+                            HeroId = 9,
+                            RatingBy = "Pedro G.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 4
+                        },
+                        new
+                        {
+                            Id = 33,
                             HeroId = 10,
-                            RatingBy = "Pedro",
+                            RatingBy = "Alex J.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 5
+                        },
+                        new
+                        {
+                            Id = 34,
+                            HeroId = 10,
+                            RatingBy = "Ramon A.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 5
+                        },
+                        new
+                        {
+                            Id = 35,
+                            HeroId = 10,
+                            RatingBy = "Pedro G.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 5
+                        },
+                        new
+                        {
+                            Id = 36,
+                            HeroId = 10,
+                            RatingBy = "Tania G.",
+                            RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Stars = 5
+                        },
+                        new
+                        {
+                            Id = 37,
+                            HeroId = 10,
+                            RatingBy = "Joaquin J.",
                             RatingDate = new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Stars = 5
                         });

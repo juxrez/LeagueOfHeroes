@@ -13,6 +13,8 @@
     <Compile Remove="Data\Migrations\20200620215224_seedData.Designer.cs" />
     <Compile Remove="Data\Migrations\20200620215621_seedData.cs" />
     <Compile Remove="Data\Migrations\20200620215621_seedData.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200620231227_Seed_Data.cs" />
+    <Compile Remove="Data\Migrations\20200620231227_Seed_Data.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

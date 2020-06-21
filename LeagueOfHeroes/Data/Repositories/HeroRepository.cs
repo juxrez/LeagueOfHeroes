@@ -1,9 +1,8 @@
 ﻿using LeagueOfHeroes.Data.Entities;
 using LeagueOfHeroes.Data.Repositories.Base;
 using LeagueOfHeroes.Data.Repositories.Interface;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace LeagueOfHeroes.Data.Repositories
@@ -14,5 +13,9 @@ namespace LeagueOfHeroes.Data.Repositories
         {
         }
 
+        public async Task<List<Hero>> GetAllHeroesWithReviews()
+        {
+            return await _context.Heroes.Include(h => h.Reviews).ToListAsync();
+        }
     }
 }

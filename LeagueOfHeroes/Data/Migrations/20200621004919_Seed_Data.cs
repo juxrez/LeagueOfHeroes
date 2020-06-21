@@ -29,36 +29,43 @@ namespace LeagueOfHeroes.Data.Migrations
                 columns: new[] { "Id", "HeroId", "RatingBy", "RatingDate", "Stars" },
                 values: new object[,]
                 {
-                    { 1, 1, "Alvaro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 28, 10, "Alex", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 27, 9, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 26, 9, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 25, 9, "Alex", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
-                    { 24, 8, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
-                    { 23, 8, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 22, 8, "Alex", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
-                    { 21, 7, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 20, 7, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 19, 7, "Alex", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 18, 6, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 17, 6, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 16, 6, "Alex", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 15, 5, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 14, 5, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 13, 5, "Alex", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 12, 4, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
-                    { 11, 4, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
-                    { 10, 4, "Alex", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
-                    { 9, 3, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 8, 3, "Maria", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 7, 3, "Tania", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 6, 2, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 5, 2, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
-                    { 4, 2, "Alex", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 3, 1, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 2, 1, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { 29, 10, "Ramon", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
-                    { 30, 10, "Pedro", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 }
+                    { 1, 1, "Alvaro L.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 21, 6, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 22, 6, "Tania G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
+                    { 23, 7, "Alex J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 24, 7, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 25, 7, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 26, 8, "Alex J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
+                    { 27, 8, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 28, 8, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
+                    { 29, 8, "Joaquin J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 30, 9, "Alex J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
+                    { 31, 9, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 32, 9, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 33, 10, "Alex J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 34, 10, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 35, 10, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 20, 6, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 36, 10, "Tania G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 19, 6, "Alex J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 17, 5, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 2, 1, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 3, 1, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 4, 1, "Tania G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
+                    { 5, 2, "Alex J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 6, 2, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
+                    { 7, 2, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 8, 3, "Tania G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 9, 3, "Maria L.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 10, 3, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 11, 3, "Alberto P.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 12, 4, "Alex J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
+                    { 13, 4, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
+                    { 14, 4, "Pedro G.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
+                    { 15, 5, "Alex J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 16, 5, "Ramon A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { 18, 5, "Rodgrigo A.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
+                    { 37, 10, "Joaquin J.", new DateTime(2020, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 }
                 });
         }
 
@@ -213,6 +220,41 @@ namespace LeagueOfHeroes.Data.Migrations
                 table: "Ratings",
                 keyColumn: "Id",
                 keyValue: 30);
+
+            migrationBuilder.DeleteData(
+                table: "Ratings",
+                keyColumn: "Id",
+                keyValue: 31);
+
+            migrationBuilder.DeleteData(
+                table: "Ratings",
+                keyColumn: "Id",
+                keyValue: 32);
+
+            migrationBuilder.DeleteData(
+                table: "Ratings",
+                keyColumn: "Id",
+                keyValue: 33);
+
+            migrationBuilder.DeleteData(
+                table: "Ratings",
+                keyColumn: "Id",
+                keyValue: 34);
+
+            migrationBuilder.DeleteData(
+                table: "Ratings",
+                keyColumn: "Id",
+                keyValue: 35);
+
+            migrationBuilder.DeleteData(
+                table: "Ratings",
+                keyColumn: "Id",
+                keyValue: 36);
+
+            migrationBuilder.DeleteData(
+                table: "Ratings",
+                keyColumn: "Id",
+                keyValue: 37);
 
             migrationBuilder.DeleteData(
                 table: "Heroes",

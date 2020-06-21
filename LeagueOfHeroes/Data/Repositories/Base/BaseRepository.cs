@@ -1,37 +1,35 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace LeagueOfHeroes.Data.Repositories.Base
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
-        private readonly LeagueOfHeroesContext _context;
+        protected readonly LeagueOfHeroesContext _context;
 
         public BaseRepository(LeagueOfHeroesContext context)
         {
             _context = context;
         }
 
-        public Task<List<TEntity>> GetAsync(Func<TEntity, bool> predicate)
+        public virtual Task<List<TEntity>> GetAsync(Func<TEntity, bool> predicate)
         {
-
-            throw new NotImplementedException();
+            var result = _context.Set<TEntity>().Where(predicate).ToList();
+            return Task.FromResult(result);
         }
 
-        public Task<List<TEntity>> GetAllAsync()
+        public virtual Task<List<TEntity>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var result = _context.Set<TEntity>().ToList();
+            return Task.FromResult(result);
         }
 
-        public Task<TEntity> GetSingleAsync(Func<TEntity, bool> predicate)
+        public virtual Task<TEntity> GetSingleAsync(Func<TEntity, bool> predicate)
         {
-            throw new NotImplementedException();
+            var result = _context.Set<TEntity>().Where(predicate).FirstOrDefault();
+            return Task.FromResult(result);
         }
     }
 }

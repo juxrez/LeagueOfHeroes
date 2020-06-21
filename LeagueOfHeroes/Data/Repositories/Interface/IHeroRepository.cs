@@ -9,5 +9,6 @@ namespace LeagueOfHeroes.Data.Repositories.Interface
 {
     public interface IHeroRepository : IBaseRepository<Hero>
     {
+        Task<List<Hero>> GetAllHeroesWithReviews();
     }
 }
