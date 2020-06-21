@@ -63,8 +63,6 @@ namespace LeagueOfHeroes.Infrastructure.Extensions
                 {
                     //Log message unable to seed data
                 }
-                
-
             }
         }
     }

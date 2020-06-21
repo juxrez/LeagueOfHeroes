@@ -2,10 +2,6 @@
 using LeagueOfHeroes.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LeagueOfHeroes.Data
 {

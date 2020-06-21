@@ -91,7 +91,7 @@ h2 {
     font-family: 'Staatliches', cursive;
 }
 .heroes-list {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 img {
     border-radius: 10%;
@@ -105,7 +105,7 @@ img {
 }
 .score-stars {
     color: orange;
-    font-size: 25px;
+    font-size: 20px;
 }
 .score-history {
     margin-top: 60px;

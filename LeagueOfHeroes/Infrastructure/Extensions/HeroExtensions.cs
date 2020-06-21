@@ -1,7 +1,5 @@
-﻿using LeagueOfHeroes.Data.Entities;
-using LeagueOfHeroes.Models;
+﻿using LeagueOfHeroes.Models;
 using LeagueOfHeroes.Models.RatingViewModels;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -53,7 +51,6 @@ namespace LeagueOfHeroes.Infrastructure.Extensions
                     hero.Median = 0;
                 }
             });
-
             
             return Task.CompletedTask;
         }
@@ -73,18 +70,6 @@ namespace LeagueOfHeroes.Infrastructure.Extensions
             return ratings.ElementAt(half).Stars;
         }
 
-        //private static int GetTheHalfIndexFromList(int lenght)
-        //{
-        //    decimal half = lenght / 2;
-        //    if(half % 1 == 0)
-        //    {
-        //        return (int)half;
-        //    }
-        //    else
-        //    {
-        //        return (int)(half + .5M);
-        //    }
-        //}
         #endregion
     }
 }

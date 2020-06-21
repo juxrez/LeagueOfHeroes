@@ -3,10 +3,7 @@ using LeagueOfHeroes.Data.Entities;
 using LeagueOfHeroes.Models;
 using LeagueOfHeroes.Models.HeroViewModels;
 using LeagueOfHeroes.Models.RatingViewModels;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace LeagueOfHeroes.Infrastructure.Mappings
 {
@@ -24,9 +21,7 @@ namespace LeagueOfHeroes.Infrastructure.Mappings
 
             CreateMap<HeroDTO, HeroViewModel>()
                 .ForMember(dest => dest.Score, opt => opt.MapFrom(src => 
-                src.Ratings.Average(r => r.Stars)
-                ));
-                
+                    src.Ratings.Average(r => r.Stars)));
 
             CreateMap<Rating, RatingViewModel>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
@@ -34,8 +29,6 @@ namespace LeagueOfHeroes.Infrastructure.Mappings
                 .ForMember(dest => dest.RatingBy, opt => opt.MapFrom(src => src.RatingBy))
                 .ForMember(dest => dest.Stars, opt => opt.MapFrom(src => src.Stars))
                 .ForMember(dest => dest.RatingDate, opt => opt.MapFrom(src => src.RatingDate));
-
-
         }
     }
 }

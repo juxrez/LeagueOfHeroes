@@ -41,29 +41,25 @@
                                         <h4>History:</h4>
                                         @foreach (var rating in item.Ratings)
                                         {
-                                            <p class="d-inline">
+                                            <p class="d-md-inline font-italic">
                                                 @rating.RatingBy :
-                                                <div title="@rating.Stars stars" style="display: inline">
+                                                <div title="@rating.Stars stars" class="d-md-inline">
                                                     @for (int i = 0; i < rating.Stars; i++)
                                                     {
                                                         <span class="score-stars">★</span>
                                                     }
                                                 </div>
-                                                
                                             </p>
                                         }   
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                         </div>
                     }
                 </div>
             </div>
-
         </div>
     </div>
-
 }
 else
 {
