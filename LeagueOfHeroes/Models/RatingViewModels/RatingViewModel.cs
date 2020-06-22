@@ -1,15 +1,13 @@
 ﻿using System;
 
-namespace LeagueOfHeroes.Data.Entities
+namespace LeagueOfHeroes.Models.RatingViewModels
 {
-    public class Rating
+    public class RatingViewModel
     {
         public int Id { get; set; }
+        public int HeroId { get; set; }
         public int Stars { get; set; }
         public string RatingBy { get; set; }
         public DateTime RatingDate { get; set; }
-
-        public int HeroId { get; set; }
-        public Hero Hero { get; set; }
     }
 }

@@ -1,10 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using AutoMapper;
+using LeagueOfHeroes.Data;
+using LeagueOfHeroes.Data.Repositories;
+using LeagueOfHeroes.Data.Repositories.Interface;
+using LeagueOfHeroes.Services;
+using LeagueOfHeroes.Services.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,10 +26,23 @@ namespace LeagueOfHeroes
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddAutoMapper(typeof(Startup));
+            
+            services.AddDbContext<LeagueOfHeroesContext>(options =>
+            {
+                options.UseMySQL(
+                    Configuration.GetConnectionString("AzureConnection"));
+            });
+
+            services.AddScoped<IHeroService, HeroService>();
+            services.AddScoped<IHeroRepository, HeroRepository>();
+
+            services.AddScoped<IRatingRepository, RatingRepository>();
+            services.AddScoped<IRatingService, RatingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, LeagueOfHeroesContext context)
         {
             if (env.IsDevelopment())
             {
@@ -52,6 +67,8 @@ namespace LeagueOfHeroes
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            context.Database.Migrate();
         }
     }
 }

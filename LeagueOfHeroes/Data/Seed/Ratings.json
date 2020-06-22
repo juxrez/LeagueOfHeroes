@@ -1,0 +1,263 @@
+{
+  "Ratings": [
+    {
+      "id": 1,
+      "HeroId": 1,
+      "stars": 4,
+      "RatingBy": "Alvaro L.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 2,
+      "HeroId": 1,
+      "stars": 4,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 3,
+      "HeroId": 1,
+      "stars": 5,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 4,
+      "HeroId": 1,
+      "stars": 2,
+      "RatingBy": "Tania G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 5,
+      "HeroId": 2,
+      "stars": 5,
+      "RatingBy": "Alex J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 6,
+      "HeroId": 2,
+      "stars": 3,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 7,
+      "HeroId": 2,
+      "stars": 5,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 8,
+      "HeroId": 3,
+      "stars": 5,
+      "RatingBy": "Tania G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 9,
+      "HeroId": 3,
+      "stars": 5,
+      "RatingBy": "Maria L.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 10,
+      "HeroId": 3,
+      "stars": 4,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 11,
+      "HeroId": 3,
+      "stars": 5,
+      "RatingBy": "Alberto P.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 12,
+      "HeroId": 4,
+      "stars": 2,
+      "RatingBy": "Alex J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 13,
+      "HeroId": 4,
+      "stars": 3,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 14,
+      "HeroId": 4,
+      "stars": 3,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 15,
+      "HeroId": 5,
+      "stars": 4,
+      "RatingBy": "Alex J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 16,
+      "HeroId": 5,
+      "stars": 4,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 17,
+      "HeroId": 5,
+      "stars": 4,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 18,
+      "HeroId": 5,
+      "stars": 2,
+      "RatingBy": "Rodgrigo A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 19,
+      "HeroId": 6,
+      "stars": 5,
+      "RatingBy": "Alex J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 20,
+      "HeroId": 6,
+      "stars": 4,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 21,
+      "HeroId": 6,
+      "stars": 5,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 22,
+      "HeroId": 6,
+      "stars": 3,
+      "RatingBy": "Tania G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 23,
+      "HeroId": 7,
+      "stars": 5,
+      "RatingBy": "Alex J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 24,
+      "HeroId": 7,
+      "stars": 5,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 25,
+      "HeroId": 7,
+      "stars": 5,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 26,
+      "HeroId": 8,
+      "stars": 3,
+      "RatingBy": "Alex J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 27,
+      "HeroId": 8,
+      "stars": 4,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 28,
+      "HeroId": 8,
+      "stars": 3,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 29,
+      "HeroId": 8,
+      "stars": 5,
+      "RatingBy": "Joaquin J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 30,
+      "HeroId": 9,
+      "stars": 3,
+      "RatingBy": "Alex J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 31,
+      "HeroId": 9,
+      "stars": 4,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 32,
+      "HeroId": 9,
+      "stars": 4,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 33,
+      "HeroId": 10,
+      "stars": 5,
+      "RatingBy": "Alex J.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 34,
+      "HeroId": 10,
+      "stars": 5,
+      "RatingBy": "Ramon A.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 35,
+      "HeroId": 10,
+      "stars": 5,
+      "RatingBy": "Pedro G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 36,
+      "HeroId": 10,
+      "stars": 5,
+      "RatingBy": "Tania G.",
+      "RatingDate": "01/23/2020"
+    },
+    {
+      "id": 37,
+      "HeroId": 10,
+      "stars": 5,
+      "RatingBy": "Joaquin J.",
+      "RatingDate": "01/23/2020"
+    }
+  ]
+}

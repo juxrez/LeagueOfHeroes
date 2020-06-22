@@ -1,87 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using LeagueOfHeroes.Models.HeroViewModels;
+using LeagueOfHeroes.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LeagueOfHeroes.Controllers
 {
     public class HeroController : Controller
     {
-        // GET: HomeController1
-        public ActionResult Index()
+        private readonly IHeroService _heroService;
+        public HeroController(IHeroService heroService)
         {
-            return View();
+            _heroService = heroService;
         }
 
-        // GET: HomeController1/Details/5
-        public ActionResult Details(int id)
+        [Route("heroes")]
+        public async Task<ActionResult> Index()
         {
-            return View();
-        }
-
-        // GET: HomeController1/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
+            var heroesVm = new HeroesViewModel();
             try
             {
-                return RedirectToAction(nameof(Index));
+                heroesVm = await _heroService.GetAllHeroesAsync();
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                heroesVm.HasError = true;
+                heroesVm.ErrorMessage = ex.InnerException?.Message ?? ex.Message;
             }
-        }
 
-        // GET: HomeController1/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: HomeController1/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            return View(heroesVm);
         }
     }
 }
